@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'vendor/css/login.css/' %}"> <!-- Замените путем к вашему CSS-файлу -->
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form action="{% url 'users:log' %}" method="post"> <!-- Замените  на ваш путь к обработчику авторизации -->
+            {% csrf_token %}
+
+            <label for="{{ form.username.id_for_label }}">Username:</label>
+            {{ form.username }}
+
+            <label for="{{ form.password.id_for_label }}">Password:</label>
+            {{ form.password }}
+
+
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+</body>
+</html>

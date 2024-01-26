@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Notes</title>
+    <link rel="stylesheet" href="{% static 'vendor/css/add_notes.css' %}">
+</head>
+<body>
+    <form action="{% url 'notes:add' %}" method="post" id="addNotesForm">
+        {% csrf_token %}
+        {{ form.title }}
+        {{ form.content }}
+
+        <input type="submit" value="Add Note">
+    </form>
+    <a href="{% url 'notes:keep' %}" class="add-notes-button">My Notes</a>
+</body>
+</html>

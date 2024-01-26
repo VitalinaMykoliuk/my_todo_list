@@ -1,0 +1,92 @@
+ body {
+            font-family: 'Arial', sans-serif;
+            background-color: #001f3f;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+         h1 {
+            text-align: center;
+            color: #000; /* Черный цвет текста */
+            background-color: #00FFFF; /* Голубой цвет фона */
+            padding: 15px; /* Уменьшенные отступы */
+            margin-bottom: 10px; /* Уменьшенный нижний отступ */
+            border-radius: 10px; /* Закругленные края */
+            max-width: 60%; /* Максимальная ширина блока (процент от ширины родительского элемента) */
+            margin-left: auto; /* Центрирование блока по горизонтали */
+            margin-right: auto; /* Центрирование блока по горизонтали */
+        }
+
+        #noteList {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .note {
+            background-color: #00FFFF;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 15px;
+            width: 300px;
+            overflow: hidden;
+
+        }
+
+        .note-number {
+            background-color: hsl(60, 70%, 40%);
+            color: #000;
+            text-align: center;
+            padding: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            width: 80px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .note-content {
+            padding: 15px;
+        }
+
+        .note-content p {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+         .add-notes-button {
+            display: block;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #45a049; /* Зеленый цвет фона */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+         }
+         .logout-btn {
+            background-color: red;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            position: absolute;
+            top: 70px;
+            right: 20px;
+        }
+
+        button[type="submit"] {
+            background-color: red;
+            color: white; /* Если вы хотите изменить цвет текста на белый или другой контрастный цвет */
+            border: none; /* Убрать границу */
+            padding: 10px 20px; /* Регулировка отступов внутри кнопки */
+            border-radius: 8px;
+        }

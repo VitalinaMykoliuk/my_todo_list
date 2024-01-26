@@ -1,0 +1,45 @@
+body {
+    background-color: #001f3f; /* Синий фон */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #e6f7ff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #2980b9; /* Цвет кнопок */
+    color: #ffffff; /* Белый цвет текста на кнопках */
+}
+
+.btn-primary:hover {
+    background-color: #1c4966; /* Цвет кнопок при наведении */
+}

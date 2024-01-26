@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'vendor/css/notes.css/' %}"> <!-- Замените путем к вашему CSS-файлу -->
+    <title>MyNotes</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Your Notes!!!</h2>
+        <p class="my-note"></p>
+        <a href="{% url 'notes:keep' %}" class="add-notes-button">My Notes</a>
+        <a href="{% url 'notes:add' %}" class="btn btn-primary">Add Note</a>
+        <a href="{% url 'notes:logout' %}" class="btn btn-danger">Logout</a>
+    </div>
+</body>
+</html>

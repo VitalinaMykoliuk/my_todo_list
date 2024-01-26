@@ -1,0 +1,60 @@
+body {
+    background-color: #001f3f;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto 50px;
+    padding: 60px;
+    background-color:#e6f7ff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 60px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #4CAF50; /* Цвет фона для кнопки "Add Note" */
+    color: #fff; /* Цвет текста */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Цвет фона для кнопки "Logout" */
+    color: #fff; /* Цвет текста */
+}
+
+.btn:hover {
+    opacity: 0.8; /* Изменение прозрачности при наведении на кнопку */
+}
+
+.add-notes-button {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #00bcd4; /* Зеленый цвет фона */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
